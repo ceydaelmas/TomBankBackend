@@ -9,6 +9,6 @@ namespace Domain.IRepositories
 {
     public interface ITabRepository : IBaseRepository<Tab>
     {
-        Task<List<Tab>> GetAllTab();
+     
     }
 }

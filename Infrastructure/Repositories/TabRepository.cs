@@ -17,10 +17,5 @@ namespace Infrastructure.Repositories
         public TabRepository(IMongoContext mongoContext, IOptions<MongoDbSettings> mongoDbSettings) : base(mongoContext, mongoDbSettings)
         {
         }
-
-        public async Task<List<Tab>> GetAllTab()
-        {
-            return await _collection.Find(_ => true).ToListAsync();
-        }
     }
 }

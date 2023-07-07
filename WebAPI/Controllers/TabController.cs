@@ -1,4 +1,5 @@
 ﻿using Application.Features.Tab.Queries;
+using Application.Model;
 using Domain.IRepositories;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -18,6 +19,7 @@ namespace WebAPI.Controllers
             
         //}
         [HttpGet("get-all-tabs")]
+        [ProducesResponseType(typeof(IEnumerable<TabModel>), 200)]
         public async Task<IActionResult> GetAllTabs()
         {
             //var result= await _tabRepository.GetAllAsync();
