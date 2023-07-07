@@ -89,3 +89,4 @@ C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\bin\Debug\net6.0\MediatR
 C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\bin\Debug\net6.0\Application.dll
 C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\bin\Debug\net6.0\Application.pdb
+C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\bin\Debug\net6.0\MongoDB.Driver.Legacy.dll

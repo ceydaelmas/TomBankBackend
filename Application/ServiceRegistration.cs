@@ -1,4 +1,5 @@
-﻿using Application.Features.Tab.Queries;
+﻿using Application.Features.Tab.Commands;
+using Application.Features.Tab.Queries;
 using Application.Mappings;
 using MediatR;
 using Microsoft.Extensions.Configuration;
@@ -22,6 +23,7 @@ namespace Application
             //Bu sayede AutoMapper, GeneralProfile sınıfındaki tüm mappingleri tanır.
 
             services.AddMediatR(typeof(GetAllTabsHandler).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(CreateTabCommandHandler).GetTypeInfo().Assembly);
             // Bu satırda MediatR servisi kaydedilir ve hangi handler'ların kullanılacağı belirtilir. Bu sayede MediatR, GetAllTabsHandler sınıfındaki tüm handler'ları tanır
         }
     }

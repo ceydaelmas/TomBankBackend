@@ -3,6 +3,7 @@ using Infrastructure.Context;
 using Infrastructure.Repositories;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,7 @@ namespace Infrastructure
             services.AddTransient(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             services.AddTransient(typeof(IMongoContext), typeof(MongoContext));
             services.AddTransient<ITabRepository, TabRepository>();
+            services.AddTransient<ICounterRepository, CounterRepository>();
             #endregion
         }
     }

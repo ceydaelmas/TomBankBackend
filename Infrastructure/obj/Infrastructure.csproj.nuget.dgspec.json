@@ -110,6 +110,10 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.20.0, )"
+            },
+            "mongocsharpdriver": {
+              "target": "Package",
+              "version": "[2.20.0, )"
             }
           },
           "imports": [

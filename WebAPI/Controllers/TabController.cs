@@ -1,4 +1,6 @@
-﻿using Application.Features.Tab.Queries;
+﻿using Application.ApiResponse;
+using Application.Features.Tab.Commands;
+using Application.Features.Tab.Queries;
 using Application.Model;
 using Domain.IRepositories;
 using MediatR;
@@ -26,6 +28,12 @@ namespace WebAPI.Controllers
             //return Ok(result);
             return Ok(await Mediator.Send(new GetAllTabsQuery()));
 
+        }
+
+        [HttpPost("add-tab")]
+        public async Task<IActionResult> AddCategory(CreateTabCommand command)
+        {
+            return Ok(await Mediator.Send(command));
         }
 
     }

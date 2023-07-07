@@ -37,3 +37,4 @@ C:\Users\win10\Desktop\TomProject\TomBankBackend\Infrastructure\obj\Debug\net6.0
 C:\Users\win10\Desktop\TomProject\TomBankBackend\Infrastructure\obj\Debug\net6.0\Infrastructure.genruntimeconfig.cache
 C:\Users\win10\Desktop\TomProject\TomBankBackend\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll
 C:\Users\win10\Desktop\TomProject\TomBankBackend\Infrastructure\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\win10\Desktop\TomProject\TomBankBackend\Infrastructure\bin\Debug\net6.0\MongoDB.Driver.Legacy.dll

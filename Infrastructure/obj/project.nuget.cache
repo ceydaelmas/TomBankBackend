@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IjXf2SsFJ5qN3ID/+10b537ukTFLVSDo754Yfg755yhP5UQlsANC0tXP5F8xwJJM1uyrjQqNWqqxVSRN3VrkGA==",
+  "dgSpecHash": "swqmhD2+LFfX191JDTMtmyv77hxWfLX8SKPrVbh/XMrb/+R9MLQ8H6JUwAw0uHm0u9iCxldWAneoeEPc0zO5Ig==",
   "success": true,
   "projectFilePath": "C:\\Users\\win10\\Desktop\\TomProject\\TomBankBackend\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\win10\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\win10\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\win10\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "C:\\Users\\win10\\.nuget\\packages\\mongocsharpdriver\\2.20.0\\mongocsharpdriver.2.20.0.nupkg.sha512",
     "C:\\Users\\win10\\.nuget\\packages\\mongodb.bson\\2.20.0\\mongodb.bson.2.20.0.nupkg.sha512",
     "C:\\Users\\win10\\.nuget\\packages\\mongodb.driver\\2.20.0\\mongodb.driver.2.20.0.nupkg.sha512",
     "C:\\Users\\win10\\.nuget\\packages\\mongodb.driver.core\\2.20.0\\mongodb.driver.core.2.20.0.nupkg.sha512",

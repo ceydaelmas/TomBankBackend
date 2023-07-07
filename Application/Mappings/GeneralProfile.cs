@@ -1,4 +1,5 @@
-﻿using Application.Features.Tab.Queries;
+﻿using Application.Features.Tab.Commands;
+using Application.Features.Tab.Queries;
 using Application.Model;
 using AutoMapper;
 using Domain.Entities;
@@ -18,6 +19,7 @@ namespace Application.Mappings
         {
             CreateMap<Tab, TabModel>().ReverseMap();
             CreateMap<Tab, GetAllTabsQuery>().ReverseMap();
+            CreateMap<Tab, CreateTabCommand>().ReverseMap();
         }
     }
 }
