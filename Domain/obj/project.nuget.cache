@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GCFM6cASqxtuP3arWRANHvJsVzj+CN7fr7fHALQEp8dEcKhUmf8/rA5Smlp9gTb76JMYtqe3QJkJoqkjXF2gyA==",
+  "dgSpecHash": "+9zY61+EK4joBb9Tu+ia64EJNBBreeWbvwK+WDj2VfxKLybGufRMdgSut4Uv8sATWqNVrkPLxirmlKQPUKdkkQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\win10\\Desktop\\TomBankBackend\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\win10\\Desktop\\TomProject\\TomBankBackend\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

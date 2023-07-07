@@ -1,0 +1,15 @@
+C:\Users\win10\Desktop\TomProject\TomBankBackend\Domain\bin\Debug\net6.0\Domain.exe
+C:\Users\win10\Desktop\TomProject\TomBankBackend\Domain\bin\Debug\net6.0\Domain.deps.json
+C:\Users\win10\Desktop\TomProject\TomBankBackend\Domain\bin\Debug\net6.0\Domain.runtimeconfig.json
+C:\Users\win10\Desktop\TomProject\TomBankBackend\Domain\bin\Debug\net6.0\Domain.dll
+C:\Users\win10\Desktop\TomProject\TomBankBackend\Domain\bin\Debug\net6.0\Domain.pdb
+C:\Users\win10\Desktop\TomProject\TomBankBackend\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+C:\Users\win10\Desktop\TomProject\TomBankBackend\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\win10\Desktop\TomProject\TomBankBackend\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+C:\Users\win10\Desktop\TomProject\TomBankBackend\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+C:\Users\win10\Desktop\TomProject\TomBankBackend\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\win10\Desktop\TomProject\TomBankBackend\Domain\obj\Debug\net6.0\Domain.dll
+C:\Users\win10\Desktop\TomProject\TomBankBackend\Domain\obj\Debug\net6.0\refint\Domain.dll
+C:\Users\win10\Desktop\TomProject\TomBankBackend\Domain\obj\Debug\net6.0\Domain.pdb
+C:\Users\win10\Desktop\TomProject\TomBankBackend\Domain\obj\Debug\net6.0\Domain.genruntimeconfig.cache
+C:\Users\win10\Desktop\TomProject\TomBankBackend\Domain\obj\Debug\net6.0\ref\Domain.dll
