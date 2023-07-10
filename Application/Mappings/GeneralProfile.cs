@@ -1,4 +1,6 @@
-﻿using Application.Features.Tab.Commands;
+﻿using Application.Features.Tab.Commands.Create;
+using Application.Features.Tab.Commands.Delete;
+using Application.Features.Tab.Commands.Update;
 using Application.Features.Tab.Queries;
 using Application.Model;
 using AutoMapper;
@@ -20,6 +22,8 @@ namespace Application.Mappings
             CreateMap<Tab, TabModel>().ReverseMap();
             CreateMap<Tab, GetAllTabsQuery>().ReverseMap();
             CreateMap<Tab, CreateTabCommand>().ReverseMap();
+            CreateMap<Tab, UpdateTabCommand>().ReverseMap();
+            CreateMap<Tab, DeleteTabCommand>().ReverseMap();
         }
     }
 }

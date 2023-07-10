@@ -90,3 +90,6 @@ C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\bin\Debug\net6.0\Microso
 C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\bin\Debug\net6.0\Application.dll
 C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\bin\Debug\net6.0\Application.pdb
 C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\bin\Debug\net6.0\MongoDB.Driver.Legacy.dll
+C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll

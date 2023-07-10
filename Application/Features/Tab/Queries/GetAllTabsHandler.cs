@@ -3,11 +3,13 @@ using Application.Model;
 using AutoMapper;
 using Domain.IRepositories;
 using MediatR;
+using Microsoft.Extensions.Caching.Memory;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace Application.Features.Tab.Queries
 {
@@ -19,16 +21,26 @@ namespace Application.Features.Tab.Queries
         private readonly ITabRepository _tabRepository;
         //IMapper, veritabanındaki tableri model nesnelerine dönüştürmek için kullanılır.
         private readonly IMapper _mapper;
+        private readonly IMemoryCache _cache;
 
-        public GetAllTabsHandler(ITabRepository tabRepository, IMapper mapper)
+        public GetAllTabsHandler(ITabRepository tabRepository, IMapper mapper, IMemoryCache cache)
         {
             _tabRepository = tabRepository;
             _mapper = mapper;
+            _cache = cache;
         }
 
         public async Task<Response<IEnumerable<TabModel>>> Handle(GetAllTabsQuery request, CancellationToken cancellationToken)
         {
+            var cacheKey = "AllTabs";
             // bu GetAllTabsQuery talebini işler. Bu fonksiyon, ITabRepository'den GetAllAsync metodunu çağırarak tüm tableri asenkron bir şekilde alır.
+            // Önbellekte verileri kontrol edin
+            if (_cache.TryGetValue(cacheKey, out IEnumerable<TabModel> cachedTabs))
+            {
+                return new Response<IEnumerable<TabModel>>(cachedTabs, true, "Tabs fetched from cache");
+            }
+
+            // Veriler önbellekte bulunamadıysa, veritabanından alın
             var tabs = await _tabRepository.GetAllAsync();
             if (tabs == null)
             {
@@ -43,6 +55,12 @@ namespace Application.Features.Tab.Queries
                 name = tab.name,
                 fullPath = tab.fullPath,
             }).ToList();
+            var cacheOptions = new MemoryCacheEntryOptions
+            {
+                AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10) // Önbellek süresini belirleyin
+            };
+            _cache.Set(cacheKey, response, cacheOptions);
+
             return new Response<IEnumerable<TabModel>>(response, true, "Tabs fetched successfully");
         
         }

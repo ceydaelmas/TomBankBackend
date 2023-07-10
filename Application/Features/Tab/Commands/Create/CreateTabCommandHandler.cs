@@ -11,16 +11,16 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.Tab.Commands
+namespace Application.Features.Tab.Commands.Create
 {
     public class CreateTabCommandHandler : IRequestHandler<CreateTabCommand, Response<string>>
     {
         private readonly ITabRepository _tabRepository;
         private readonly ICounterRepository _counterRepository;
 
-        public CreateTabCommandHandler(ITabRepository categoryRepository, ICounterRepository counterRepository)
+        public CreateTabCommandHandler(ITabRepository tabRepository, ICounterRepository counterRepository)
         {
-            _tabRepository = categoryRepository;
+            _tabRepository = tabRepository;
             _counterRepository = counterRepository;
 
         }
@@ -49,7 +49,9 @@ namespace Application.Features.Tab.Commands
                 {
                     _id = nextId,
                     name = request.TabName,
-                    parentId = parentId ?? 0
+                    parentId = parentId ?? 0,
+                    fullPath = request.FullPath,
+                    path = request.Path,
                 };
 
                 await _tabRepository.CreateAsync(tab);

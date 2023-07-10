@@ -42,3 +42,5 @@ C:\Users\win10\Desktop\TomProject\TomBankBackend\Application\obj\Debug\net6.0\re
 C:\Users\win10\Desktop\TomProject\TomBankBackend\Application\obj\Debug\net6.0\Application.pdb
 C:\Users\win10\Desktop\TomProject\TomBankBackend\Application\obj\Debug\net6.0\Application.genruntimeconfig.cache
 C:\Users\win10\Desktop\TomProject\TomBankBackend\Application\obj\Debug\net6.0\ref\Application.dll
+C:\Users\win10\Desktop\TomProject\TomBankBackend\Application\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\win10\Desktop\TomProject\TomBankBackend\Application\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll

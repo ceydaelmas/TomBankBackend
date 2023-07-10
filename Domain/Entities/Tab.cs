@@ -8,7 +8,7 @@ namespace Domain.Entities
 {
     public class Tab :BaseEntity
     {
-        public int parentId { get; set; }
+        public int? parentId { get; set; }
 
         public string path { get; set; }
 

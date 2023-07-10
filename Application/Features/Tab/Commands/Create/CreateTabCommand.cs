@@ -8,7 +8,7 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace Application.Features.Tab.Commands
+namespace Application.Features.Tab.Commands.Create
 {
     public class CreateTabCommand : IRequest<Response<string>>
     {
@@ -16,6 +16,10 @@ namespace Application.Features.Tab.Commands
         public string TabName { get; set; }
 
         public string? ParentName { get; set; }
+
+        public string? FullPath { get; set; }
+
+        public string? Path { get; set; }
 
     }
 }
