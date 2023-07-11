@@ -33,14 +33,14 @@ namespace Application.Features.Tab.Queries
         public async Task<Response<IEnumerable<TabModel>>> Handle(GetAllTabsQuery request, CancellationToken cancellationToken)
         {
             var cacheKey = "AllTabs";
-            // bu GetAllTabsQuery talebini işler. Bu fonksiyon, ITabRepository'den GetAllAsync metodunu çağırarak tüm tableri asenkron bir şekilde alır.
-            // Önbellekte verileri kontrol edin
+            // Önbellekte verileri kontrol eder
             if (_cache.TryGetValue(cacheKey, out IEnumerable<TabModel> cachedTabs))
             {
                 return new Response<IEnumerable<TabModel>>(cachedTabs, true, "Tabs fetched from cache");
             }
 
-            // Veriler önbellekte bulunamadıysa, veritabanından alın
+            // Veriler önbellekte bulunamadıysa, veritabanından alır
+            // bu GetAllTabsQuery talebini işler. Bu fonksiyon, ITabRepository'den GetAllAsync metodunu çağırarak tüm tableri asenkron bir şekilde alır.
             var tabs = await _tabRepository.GetAllAsync();
             if (tabs == null)
             {
@@ -55,9 +55,10 @@ namespace Application.Features.Tab.Queries
                 name = tab.name,
                 fullPath = tab.fullPath,
             }).ToList();
+
             var cacheOptions = new MemoryCacheEntryOptions
             {
-                AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10) // Önbellek süresini belirleyin
+                AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10) // Önbellek süresi
             };
             _cache.Set(cacheKey, response, cacheOptions);
 
