@@ -25,6 +25,7 @@ namespace Application
             //Bu sayede AutoMapper, GeneralProfile sınıfındaki tüm mappingleri tanır.
 
             services.AddMediatR(typeof(GetAllTabsHandler).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(GetAllTabsForParentHandler).GetTypeInfo().Assembly);
             services.AddMediatR(typeof(CreateTabCommandHandler).GetTypeInfo().Assembly);
             services.AddMediatR(typeof(UpdateTabCommandHandler).GetTypeInfo().Assembly);
             services.AddMediatR(typeof(DeleteTabCommandHandler).GetTypeInfo().Assembly);

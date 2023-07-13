@@ -41,7 +41,6 @@ C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\obj\Debug\net6.0\WebAPI.
 C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\obj\Debug\net6.0\WebAPI.AssemblyInfoInputs.cache
 C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\obj\Debug\net6.0\WebAPI.AssemblyInfo.cs
 C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\obj\Debug\net6.0\WebAPI.csproj.CoreCompileInputs.cache
-C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\obj\Debug\net6.0\staticwebassets.development.json

@@ -11,7 +11,7 @@ namespace Application.Model
         {
             public int _id { get; set; }
 
-            public int? parentId { get; set; }
+            public string? parentName { get; set; }
 
             public string path { get; set; }
 

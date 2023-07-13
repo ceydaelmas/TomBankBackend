@@ -21,6 +21,7 @@ namespace Application.Mappings
         {
             CreateMap<Tab, TabModel>().ReverseMap();
             CreateMap<Tab, GetAllTabsQuery>().ReverseMap();
+            CreateMap<Tab, GetAllTabsForParentQuery>().ReverseMap();
             CreateMap<Tab, CreateTabCommand>().ReverseMap();
             CreateMap<Tab, UpdateTabCommand>().ReverseMap();
             CreateMap<Tab, DeleteTabCommand>().ReverseMap();

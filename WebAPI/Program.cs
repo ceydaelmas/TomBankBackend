@@ -11,6 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.Configure<MongoDbSettings>(builder.Configuration.GetSection("MongoDbSettings"));
 builder.Services.AddControllers();
+
 builder.Services.AddMemoryCache();
 builder.Services.AddCors(options =>
 {

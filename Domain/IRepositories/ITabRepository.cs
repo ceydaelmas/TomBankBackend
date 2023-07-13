@@ -10,8 +10,9 @@ namespace Domain.IRepositories
     public interface ITabRepository : IBaseRepository<Tab>
     {
         Task<Tab> GetByNameAsync(string name);
-        Task<int?> GetIdByNameAsync(string tabName);
+        Task<int> GetIdByNameAsync(string tabName);
         Task<bool> ExistsAsync(string tabName);
-
+        string GetNameById(int id);
+         Task<List<Tab>> GetSelectableParentTabs(int id);
     }
 }

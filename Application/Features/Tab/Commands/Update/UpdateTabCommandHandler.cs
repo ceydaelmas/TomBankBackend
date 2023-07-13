@@ -1,7 +1,10 @@
 ﻿using Amazon.Runtime.Internal;
+using Amazon.Runtime.Internal.Util;
 using Application.ApiResponse;
+using AutoMapper;
 using Domain.IRepositories;
 using MediatR;
+using Microsoft.Extensions.Caching.Memory;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,10 +16,14 @@ namespace Application.Features.Tab.Commands.Update
     public class UpdateTabCommandHandler : IRequestHandler<UpdateTabCommand, Response<string>>
     {
         private readonly ITabRepository _tabRepository;
+        private readonly IMapper _mapper;
+        private readonly IMemoryCache _cache;
 
-        public UpdateTabCommandHandler(ITabRepository tabRepository)
+        public UpdateTabCommandHandler(ITabRepository tabRepository, IMapper mapper, IMemoryCache cache)
         {
             _tabRepository = tabRepository;
+            _mapper = mapper;
+            _cache = cache;
         }
         public async Task<Response<string>> Handle(UpdateTabCommand request, CancellationToken cancellationToken)
         {
@@ -27,7 +34,7 @@ namespace Application.Features.Tab.Commands.Update
                 return new Response<string>(false, message: "Tab ismi zaten kullanılıyor");
             }
 
-            int? parentId = null;
+            int parentId =0;
             if (!string.IsNullOrEmpty(request.ParentName))
             {
                 parentId = await _tabRepository.GetIdByNameAsync(request.ParentName);
@@ -52,6 +59,7 @@ namespace Application.Features.Tab.Commands.Update
                 tab.fullPath = request.FullPath;
 
                 await _tabRepository.UpdateAsync(tab._id,tab);
+                _cache.Remove("AllTabs");
                 return new Response<string>(true, message: "Tab bilgileri düzenlendi");
             }
         }

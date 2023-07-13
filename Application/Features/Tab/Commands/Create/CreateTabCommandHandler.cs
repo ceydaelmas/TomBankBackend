@@ -1,7 +1,9 @@
 ﻿using Application.ApiResponse;
+using AutoMapper;
 using Domain.Entities;
 using Domain.IRepositories;
 using MediatR;
+using Microsoft.Extensions.Caching.Memory;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -17,12 +19,15 @@ namespace Application.Features.Tab.Commands.Create
     {
         private readonly ITabRepository _tabRepository;
         private readonly ICounterRepository _counterRepository;
+        private readonly IMapper _mapper;
+        private readonly IMemoryCache _cache;
 
-        public CreateTabCommandHandler(ITabRepository tabRepository, ICounterRepository counterRepository)
+        public CreateTabCommandHandler(ITabRepository tabRepository, ICounterRepository counterRepository,IMapper mapper, IMemoryCache cache)
         {
             _tabRepository = tabRepository;
             _counterRepository = counterRepository;
-
+            _mapper = mapper;
+            _cache = cache;
         }
 
         public async Task<Response<string>> Handle(CreateTabCommand request, CancellationToken cancellationToken)
@@ -55,6 +60,7 @@ namespace Application.Features.Tab.Commands.Create
                 };
 
                 await _tabRepository.CreateAsync(tab);
+                _cache.Remove("AllTabs");
                 return new Response<string>(true, message: "tab eklendi");
             }
             else

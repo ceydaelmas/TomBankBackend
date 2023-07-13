@@ -31,6 +31,15 @@ namespace WebAPI.Controllers
             return Ok(await Mediator.Send(new GetAllTabsQuery()));
 
         }
+        [HttpGet("GetSelectableParentTabs")]
+        [ProducesResponseType(typeof(IEnumerable<SelectableTabModel>), 200)]
+        public async Task<IActionResult> GetSelectableParentTabs(int id)
+        {
+            //var result= await _tabRepository.GetAllAsync();
+            //return Ok(result);
+            return Ok(await Mediator.Send(new GetAllTabsForParentQuery{ _id=id }));
+
+        }
 
         [HttpPost("AddTab")]
         public async Task<IActionResult> AddCategory(CreateTabCommand command)
