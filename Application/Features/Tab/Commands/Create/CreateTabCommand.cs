@@ -1,4 +1,5 @@
 ﻿using Application.ApiResponse;
+using Application.Attributes;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,7 @@ namespace Application.Features.Tab.Commands.Create
 
         public string? ParentName { get; set; }
 
+        [FullPathValidation(ErrorMessage = "Invalid fullPath. Please provide a valid rooted file path.")]
         public string? FullPath { get; set; }
 
         public string? Path { get; set; }

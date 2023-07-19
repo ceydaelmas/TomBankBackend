@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Application.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,13 +12,14 @@ namespace Application.Model
         {
             public int _id { get; set; }
 
-            public string? parentName { get; set; }
+            public int? parentId { get; set; }
 
             public string path { get; set; }
 
             public string name { get; set; }
 
-            public string fullPath { get; set; }
+        [FullPathValidation(ErrorMessage = "Invalid fullPath. Please provide a valid rooted file path.")]
+        public string fullPath { get; set; }
 
         }
     }

@@ -9,7 +9,7 @@ namespace Domain.Entities
 {
     public class Tab :BaseEntity, ISoftDelete
     {
-        public int parentId { get; set; }
+        public int? parentId { get; set; }
 
         public string path { get; set; }
 

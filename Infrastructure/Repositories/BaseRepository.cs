@@ -23,7 +23,7 @@ namespace Infrastructure.Repositories
             _collection = mongoContext.GetCollection<T>(collectionName);
         }
 
-        public async Task<T> GetByIdAsync(int id)
+        public async Task<T> GetByIdAsync(int? id)
         {
             var filter = Builders<T>.Filter.And(
                             Builders<T>.Filter.Eq(x => x._id, id),

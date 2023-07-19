@@ -33,7 +33,7 @@ namespace Infrastructure.Repositories
             var result = await _collection.Find(filter).FirstOrDefaultAsync();
             return result != null;
         }
-        public string GetNameById(int id)
+        public string GetNameById(int? id)
         {
          
             var filter = Builders<Tab>.Filter.Eq(t => t._id, id);
@@ -48,7 +48,7 @@ namespace Infrastructure.Repositories
 
         public async Task<List<Tab>> GetSelectableParentTabs(int id)
         {
-            var filter = Builders<Tab>.Filter.Where(t =>(t._id!= id) && (t.parentId!=id) );
+            var filter = Builders<Tab>.Filter.Where(t =>(t._id!= id) && (t.parentId!=id) && (t.IsDeleted!=true));
 
             var selectedTabs = await _collection.Find(filter).ToListAsync();
             return selectedTabs;
@@ -56,6 +56,12 @@ namespace Infrastructure.Repositories
              1 -> kendisi gelmicek,parametre yollanacak
              2->kendsiinin childlari gelmeyecek 
              */
+        }
+        public async Task<List<Tab>> GetByParentIdAsync(int parentId)
+        {
+            var filter = Builders<Tab>.Filter.Where(t => (t.parentId==parentId) && (t.IsDeleted!=true));
+            var childTabs = await _collection.Find(filter).ToListAsync();
+            return childTabs;
         }
     }
 }

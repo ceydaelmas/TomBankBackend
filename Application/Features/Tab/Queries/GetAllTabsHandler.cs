@@ -50,7 +50,7 @@ namespace Application.Features.Tab.Queries
             var response = tabs.Select( tab => new TabModel
             {
                 _id = tab._id,
-                parentName = _tabRepository.GetNameById(tab.parentId),
+                parentId = tab.parentId,
                 path = tab.path,
                 name = tab.name,
                 fullPath = tab.fullPath,
