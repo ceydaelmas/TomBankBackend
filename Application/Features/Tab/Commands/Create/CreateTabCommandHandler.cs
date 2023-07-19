@@ -65,7 +65,7 @@ namespace Application.Features.Tab.Commands.Create
             }
             else
             {
-                return new Response<string>(true, message: "tab zaten ekli");
+                return new Response<string>(false, message: "tab zaten ekli");
             }
         }
     }

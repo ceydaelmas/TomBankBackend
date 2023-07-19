@@ -12,11 +12,11 @@ namespace Application.Attributes
         {
             string fullPath = value as string;
 
-            //// fullPath boş olmamalıdır
-            //if (string.IsNullOrWhiteSpace(fullPath))
-            //{
-            //    return new ValidationResult("fullPath cannot be empty.");
-            //}
+            // fullPath boş olabilir
+            if (string.IsNullOrWhiteSpace(fullPath))
+            {
+                return ValidationResult.Success;
+            }
 
             // fullPath geçerli bir dosya yolu olmalıdır
             if (!IsRootedPath(fullPath))
@@ -65,8 +65,8 @@ namespace Application.Attributes
         // Geçersiz karakterleri kontrol eden metod
         private bool ContainsInvalidCharacters(string path)
         {
-            // Bu örnekte, sadece iki veya daha fazla / veya \ içerip içermediğini kontrol ediyoruz.
-            return path.Contains("//") || path.Contains(@"\\");
+            return path.Contains("//") || !Regex.IsMatch(path, @"^[a-zA-Z0-9./\\:]+$");
+
         }
     }
 }

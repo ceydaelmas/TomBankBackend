@@ -44,16 +44,6 @@ namespace WebAPI.Controllers
         [HttpPost("AddTab")]
         public async Task<IActionResult> AddCategory(CreateTabCommand command)
         {
-            if (!ModelState.IsValid)
-            {
-                // Model doğrulaması başarısız olursa, hataları işleyin veya uyarı döndürün.
-                var errors = ModelState.Values.SelectMany(v => v.Errors.Select(e => e.ErrorMessage));
-                var response = new Response<object>(false, "Validation failed")
-                {
-                    Errors = errors.ToList()
-                };
-                return BadRequest(response);
-            }
             return Ok(await Mediator.Send(command));
         }
 
