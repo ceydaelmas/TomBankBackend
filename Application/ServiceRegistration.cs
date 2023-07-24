@@ -1,4 +1,6 @@
-﻿using Application.Features.Tab.Commands.Create;
+﻿using Application.Features.Component.Commands.Create;
+using Application.Features.Component.Queries.Get;
+using Application.Features.Tab.Commands.Create;
 using Application.Features.Tab.Commands.Delete;
 using Application.Features.Tab.Commands.Update;
 using Application.Features.Tab.Queries;
@@ -29,6 +31,9 @@ namespace Application
             services.AddMediatR(typeof(CreateTabCommandHandler).GetTypeInfo().Assembly);
             services.AddMediatR(typeof(UpdateTabCommandHandler).GetTypeInfo().Assembly);
             services.AddMediatR(typeof(DeleteTabCommandHandler).GetTypeInfo().Assembly);
+
+            services.AddMediatR(typeof(GetAllComponentsHandler).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(CreateComponentCommandHandler).GetTypeInfo().Assembly);
             // Bu satırda MediatR servisi kaydedilir ve hangi handler'ların kullanılacağı belirtilir. Bu sayede MediatR, GetAllTabsHandler sınıfındaki tüm handler'ları tanır
         }
     }

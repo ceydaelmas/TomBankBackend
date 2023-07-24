@@ -1,0 +1,40 @@
+﻿Component: 
+	name 
+	id
+	pageId
+	attributes<list>
+
+Attribute:
+	id
+	name
+	componentId
+	Values<List>
+
+Value:
+	id 
+	name
+	attributeId
+
+Page-Component
+	pageId
+	pageName
+	Component<List>
+
+---------------------
+Component: 
+	name 
+	id
+	pageId
+	attributes<list>
+
+Attribute:
+	id
+	name
+	componentId
+	ValueName
+
+
+Page-Component
+	pageId
+	pageName
+	Component<List>

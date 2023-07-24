@@ -1,4 +1,6 @@
-﻿using Application.Features.Tab.Commands.Create;
+﻿using Application.Features.Component.Commands.Create;
+using Application.Features.Component.Queries.Get;
+using Application.Features.Tab.Commands.Create;
 using Application.Features.Tab.Commands.Delete;
 using Application.Features.Tab.Commands.Update;
 using Application.Features.Tab.Queries;
@@ -25,6 +27,9 @@ namespace Application.Mappings
             CreateMap<Tab, CreateTabCommand>().ReverseMap();
             CreateMap<Tab, UpdateTabCommand>().ReverseMap();
             CreateMap<Tab, DeleteTabCommand>().ReverseMap();
+
+            CreateMap<Component, CreateComponentCommand>().ReverseMap();
+            CreateMap<Component, GetAllComponentsQuery>().ReverseMap();
         }
     }
 }

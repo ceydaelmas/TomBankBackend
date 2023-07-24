@@ -21,6 +21,8 @@ namespace Infrastructure
             services.AddTransient(typeof(IMongoContext), typeof(MongoContext));
             services.AddTransient<ITabRepository, TabRepository>();
             services.AddTransient<ICounterRepository, CounterRepository>();
+            services.AddTransient<IComponentRepository, ComponentRepository>();
+            services.AddTransient<IAttributeRepository, AttributeRepository>();
             #endregion
         }
     }

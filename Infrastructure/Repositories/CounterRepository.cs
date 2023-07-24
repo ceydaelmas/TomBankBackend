@@ -24,10 +24,21 @@ namespace Infrastructure.Repositories
 
         public async Task<int> GetNextIdAsync(string counterId)
         {
-            var filter = Builders<Counters>.Filter.Eq(c => c._id, "tabId");
+            var filter = Builders<Counters>.Filter.Eq(c => c._id, counterId);
             var update = Builders<Counters>.Update.Inc(c => c.seq, 1);
             var options = new FindOneAndUpdateOptions<Counters> { ReturnDocument = ReturnDocument.After };
             var counter = await _counterCollection.FindOneAndUpdateAsync(filter, update, options);
+
+            if (counter == null)
+            {
+                counter = new Counters
+                {
+                    _id = counterId,
+                    seq = 1
+                };
+
+                await _counterCollection.InsertOneAsync(counter);
+            }
 
             return counter.seq;
         }
