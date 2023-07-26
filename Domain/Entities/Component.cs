@@ -12,9 +12,7 @@ namespace Domain.Entities
 
         public string name { get; set; }
 
-        public int pageId { get; set; }
-
-        public List<Attribute> attributes { get; set; }
+        public List<Property> properties { get; set; }
 
         public bool IsDeleted { get; set; }
 

@@ -22,7 +22,9 @@ namespace Infrastructure
             services.AddTransient<ITabRepository, TabRepository>();
             services.AddTransient<ICounterRepository, CounterRepository>();
             services.AddTransient<IComponentRepository, ComponentRepository>();
-            services.AddTransient<IAttributeRepository, AttributeRepository>();
+            services.AddTransient<IPropertyRepository, PropertyRepository>();
+            //services.AddTransient<IValueRepository, ValueRepository>();
+            services.AddTransient<IPageComponentRepository, PageComponentRepository>();
             #endregion
         }
     }

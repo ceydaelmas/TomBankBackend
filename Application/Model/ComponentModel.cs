@@ -12,8 +12,6 @@ namespace Application.Model
 
         public string name { get; set; }
 
-        public int pageId { get; set; }
-
-        public List<AttributeModel> attributes { get; set; }
+        public List<PropertyModel> properties { get; set; }
     }
 }

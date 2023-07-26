@@ -45,8 +45,6 @@ namespace Application.Features.Tab.Commands.Update
                     return new Response<string>(false, message: "Parent tab ismi bulunamadı");
                 }
             }
-
-
             if (tab == null)
             {
                 return new Response<string>(false, message: "Tab bilgileri düzenlenirken bir hata oluştu");

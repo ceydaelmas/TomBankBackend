@@ -24,6 +24,9 @@
   <ItemGroup>
     <Folder Include="Features\Component\Commands\Delete\" />
     <Folder Include="Features\Component\Commands\Update\" />
+    <Folder Include="Features\Property\Commands\Delete\" />
+    <Folder Include="Features\Property\Commands\Update\" />
+    <Folder Include="Features\Property\Queries\Get\" />
   </ItemGroup>
 
 </Project>

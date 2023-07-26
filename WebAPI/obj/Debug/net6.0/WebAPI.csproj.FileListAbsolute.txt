@@ -92,4 +92,3 @@ C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\bin\Debug\net6.0\MongoDB
 C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
 C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\win10\Desktop\TomProject\TomBankBackend\WebAPI\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs

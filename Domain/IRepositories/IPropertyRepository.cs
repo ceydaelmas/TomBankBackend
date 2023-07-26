@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Attribute = Domain.Entities.Attribute;
 
 namespace Domain.IRepositories
 {
-    public interface IAttributeRepository : IBaseRepository<Attribute>
+    public interface IPropertyRepository : IBaseRepository<Property>
     {
+        Task<Property> GetByNameAsync(string name);
     }
 }

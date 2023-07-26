@@ -13,9 +13,7 @@ namespace Application.Features.Component.Commands.Create
     {
         public string ComponentName { get; set; }
 
-        public int PageId { get; set; }
-
-        public List<AttributeModel> Attributes { get; set; }
+        public List<PropertyModel> Properties { get; set; }
 
     }
 }

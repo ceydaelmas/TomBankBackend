@@ -22,7 +22,7 @@ namespace Application.Features.Component.Queries.Get
         public async Task<Response<IEnumerable<ComponentModel>>> Handle(GetAllComponentsQuery request, CancellationToken cancellationToken)
         {
             var components = await _componentRepository.GetAllAsync();
-            if(components == null)
+            if (components == null)
             {
                 return new Response<IEnumerable<ComponentModel>>(false, message: "Component is not found");
             }
@@ -30,12 +30,10 @@ namespace Application.Features.Component.Queries.Get
             {
                 _id = component._id,
                 name = component.name,
-                pageId = component.pageId,
-                attributes = component.attributes?.Select(attr => new AttributeModel
+                properties= component.properties?.Select(prop => new PropertyModel
                 {
-                    name = attr.name,
-                    valueName = attr.valueName,
-                }).ToList() ?? new List<AttributeModel>()
+                    name = prop.name,
+                }).ToList() ?? new List<PropertyModel>()
             });
 
             return new Response<IEnumerable<ComponentModel>>(response, true, "Components fetched successfully");

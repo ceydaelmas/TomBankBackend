@@ -7,11 +7,9 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Values : BaseEntity, ISoftDelete
+    public class Property : BaseEntity, ISoftDelete
     {
         public string name { get; set; }
-
-        public int attributeId { get; set; }
 
         public bool IsDeleted { get; set; }
 
