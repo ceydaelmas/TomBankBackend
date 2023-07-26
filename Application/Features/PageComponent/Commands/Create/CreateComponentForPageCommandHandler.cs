@@ -94,7 +94,7 @@ namespace Application.Features.PageComponent.Commands.Create
 
             await _pageComponentRepository.CreateAsync(pageComponent);
 
-            return new Response<string>(true, message: "Component oluşturuldu.");
+            return new Response<string>(true, message: $"'{request.PageName}' sayfasında '{request.ComponentName}' oluşturuldu.");
         }
     }
 }
