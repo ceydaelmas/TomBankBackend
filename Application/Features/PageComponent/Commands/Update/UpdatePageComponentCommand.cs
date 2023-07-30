@@ -11,7 +11,7 @@ namespace Application.Features.PageComponent.Commands.Update
 {
     public class UpdatePageComponentCommand : IRequest<Response<string>>
     {
-        public int Id { get; set; }
+        public int _id { get; set; }
 
         public string ComponentName { get; set; }
 

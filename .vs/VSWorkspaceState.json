@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Application"
+    "\\Application",
+    "\\Application\\Features",
+    "\\Application\\Features\\Component",
+    "\\Application\\Features\\PageComponent",
+    "\\Application\\Features\\Tab",
+    "\\Application\\Features\\Tab\\Commands",
+    "\\Application\\Features\\Tab\\Commands\\Update"
   ],
   "SelectedNode": "\\TomBankBackend.sln",
   "PreviewInSolutionExplorer": false

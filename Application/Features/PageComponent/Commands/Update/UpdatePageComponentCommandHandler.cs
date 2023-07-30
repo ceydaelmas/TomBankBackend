@@ -27,14 +27,14 @@ namespace Application.Features.PageComponent.Commands.Update
 
         public async Task<Response<string>> Handle(UpdatePageComponentCommand request, CancellationToken cancellationToken)
         {
-            var pageComponent = await _pageComponentRepository.GetByIdAsync(request.Id);
+            var pageComponent = await _pageComponentRepository.GetByIdAsync(request._id);
             var pageComponentWithName = await _pageComponentRepository.GetByNameAsync(request.Name);
 
             if (pageComponent == null)
             {
                 return new Response<string>(false, message: "Böyle bir kayıt yok.");
             }
-            if (pageComponentWithName != null && pageComponentWithName._id != request.Id)
+            if (pageComponentWithName != null && pageComponentWithName._id != request._id)
             {
                 return new Response<string>(false, message: "Name zaten başka bir component tarafından kullanılıyor");
             }
