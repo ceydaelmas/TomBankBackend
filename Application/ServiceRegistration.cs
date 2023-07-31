@@ -4,6 +4,7 @@ using Application.Features.PageComponent.Commands.Create;
 using Application.Features.PageComponent.Commands.Delete;
 using Application.Features.PageComponent.Commands.Update;
 using Application.Features.PageComponent.Queries.Get;
+using Application.Features.PageComponent.Queries.Get.GetComponentsByPageName;
 using Application.Features.Property.Commands.Create;
 using Application.Features.Tab.Commands.Create;
 using Application.Features.Tab.Commands.Delete;
@@ -44,6 +45,7 @@ namespace Application
 
             services.AddMediatR(typeof(CreateComponentForPageCommandHandler).GetTypeInfo().Assembly);
             services.AddMediatR(typeof(GetAllPageComponentHandler).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(GetComponentsByPageNameHandler).GetTypeInfo().Assembly);
             services.AddMediatR(typeof(UpdatePageComponentCommandHandler).GetTypeInfo().Assembly);
             services.AddMediatR(typeof(DeletePageComponentCommandHandler).GetTypeInfo().Assembly);
             // Bu satırda MediatR servisi kaydedilir ve hangi handler'ların kullanılacağı belirtilir. Bu sayede MediatR, GetAllTabsHandler sınıfındaki tüm handler'ları tanır

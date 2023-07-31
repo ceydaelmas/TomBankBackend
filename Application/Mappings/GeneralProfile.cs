@@ -2,6 +2,8 @@
 using Application.Features.Component.Queries.Get;
 using Application.Features.PageComponent.Commands.Delete;
 using Application.Features.PageComponent.Commands.Update;
+using Application.Features.PageComponent.Queries.Get;
+using Application.Features.PageComponent.Queries.Get.GetComponentsByPageName;
 using Application.Features.Property.Commands.Create;
 using Application.Features.Tab.Commands.Create;
 using Application.Features.Tab.Commands.Delete;
@@ -39,6 +41,8 @@ namespace Application.Mappings
             CreateMap<PageComponent, CreateComponentCommand>().ReverseMap();
             CreateMap<PageComponent, UpdatePageComponentCommand>().ReverseMap();
             CreateMap<PageComponent, DeletePageComponentCommand>().ReverseMap();
+            CreateMap<PageComponent, GetAllPageComponentQuery>().ReverseMap();
+            CreateMap<PageComponent, GetComponentsByPageNameQuery>().ReverseMap();
         }
     }
 }

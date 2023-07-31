@@ -23,5 +23,11 @@ namespace Infrastructure.Repositories
             var filter = Builders<PageComponent>.Filter.Eq(x => x.name, name);
             return await _collection.Find(filter).FirstOrDefaultAsync();
         }
+        public async Task<IEnumerable<PageComponent>> GetComponentsByPageNameAsync(int pageId)
+        {
+            var filter = Builders<PageComponent>.Filter.Eq(x => x.pageId, pageId);
+            return await _collection.Find(filter).ToListAsync();
+        }
+
     }
 }

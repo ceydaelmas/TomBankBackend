@@ -37,10 +37,10 @@ namespace Application.Features.Tab.Commands.Update
             int parentId =0;
             if (!string.IsNullOrEmpty(request.ParentName))
             {
-                parentId = await _tabRepository.GetIdByNameAsync(request.ParentName);
+                parentId = (int)await _tabRepository.GetIdByNameAsync(request.ParentName);
 
                 // Check if there is no Tab with the parent name
-                if (parentId == null)
+                if (parentId == -1)
                 {
                     return new Response<string>(false, message: "Parent tab ismi bulunamadı");
                 }

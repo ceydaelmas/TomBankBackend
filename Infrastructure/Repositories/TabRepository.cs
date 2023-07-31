@@ -25,6 +25,11 @@ namespace Infrastructure.Repositories
         {
             var filter = Builders<Tab>.Filter.Eq(t => t.name, tabName);
             var tab = await _collection.Find(filter).FirstOrDefaultAsync();
+            if (tab is null)
+            {
+                return -1;
+
+            }
             return tab._id;
         }
         public async Task<bool> ExistsAsync(string tabName)
