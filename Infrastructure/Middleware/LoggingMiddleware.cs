@@ -14,6 +14,7 @@ namespace Infrastructure.Middleware
         private readonly RequestDelegate _next;
         private readonly ILogger<LoggingMiddleware> _logger;
 
+        
         public LoggingMiddleware(RequestDelegate next, ILogger<LoggingMiddleware> logger)
         {
             _next = next;
