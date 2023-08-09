@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\win10\\Desktop\\TomProject\\TomBankBackend\\Domain\\Domain.csproj": {}
+    "C:\\Users\\win10\\RiderProjects\\TomBankBackend\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\win10\\Desktop\\TomProject\\TomBankBackend\\Domain\\Domain.csproj": {
+    "C:\\Users\\win10\\RiderProjects\\TomBankBackend\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\win10\\Desktop\\TomProject\\TomBankBackend\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\win10\\RiderProjects\\TomBankBackend\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\win10\\Desktop\\TomProject\\TomBankBackend\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\win10\\RiderProjects\\TomBankBackend\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\win10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\win10\\Desktop\\TomProject\\TomBankBackend\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\win10\\RiderProjects\\TomBankBackend\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\win10\\AppData\\Roaming\\NuGet\\NuGet.Config",

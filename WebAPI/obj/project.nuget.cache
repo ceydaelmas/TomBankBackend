@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K4X0GzJ4/z/0dvP5dmeNTAhq3LsMzshz9icNdTaV8y69tD95UFvpGkR7qy0Xgz8MpBFh5ZVfAz5lOSkF+LipJQ==",
+  "dgSpecHash": "LkpTCMk237PTewN4bNjvg13iRek8svW/zfZtqcBA/dhL44WntU7f2jKlC8lMSvpHuEyPk2vx7ggG5WRz9zssdg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\win10\\Desktop\\TomProject\\TomBankBackend\\WebAPI\\WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\win10\\RiderProjects\\TomBankBackend\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\win10\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\win10\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

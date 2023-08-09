@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wBI/ELw/GvVOmTDKCZbEVz4IDGq7tbBUV5RwUI3cYr4KpCe/kDsWekIKIIGTgz+4Z0ws4WTawGQOHzmuLfcvnA==",
+  "dgSpecHash": "Nhwaw1EYa8U3W0qxAzNgDHDsQlgpGqXgMcfodYL8dN+NKKqUirmYrsoZDmmiIlyv8cvQyjoXadJTFxM9jdFKLA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\win10\\Desktop\\TomProject\\TomBankBackend\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\win10\\RiderProjects\\TomBankBackend\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\win10\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\win10\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

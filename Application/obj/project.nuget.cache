@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QSByTlswo8SWTR/h7pR3XtUIm+OE/2J6y725jeudFXR2gs/LCyW51LkMvrVy5UwtycmZIg7WCojGOsUmok+nJA==",
+  "dgSpecHash": "gTwkZsbPfbdQt77fYt0Z1KRIHNacXMdKPI3bk8sSdiSPyfaPn668m4iyz3ibZcT4MLC/utKmQnVv/WD7WsQqug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\win10\\Desktop\\TomProject\\TomBankBackend\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\win10\\RiderProjects\\TomBankBackend\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\win10\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\win10\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

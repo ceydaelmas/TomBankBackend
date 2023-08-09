@@ -1086,11 +1086,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\win10\\Desktop\\TomProject\\TomBankBackend\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\win10\\RiderProjects\\TomBankBackend\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\Users\\win10\\Desktop\\TomProject\\TomBankBackend\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "C:\\Users\\win10\\RiderProjects\\TomBankBackend\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\win10\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\win10\\Desktop\\TomProject\\TomBankBackend\\Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\win10\\RiderProjects\\TomBankBackend\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\win10\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1107,8 +1107,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\win10\\Desktop\\TomProject\\TomBankBackend\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\win10\\Desktop\\TomProject\\TomBankBackend\\Domain\\Domain.csproj"
+            "C:\\Users\\win10\\RiderProjects\\TomBankBackend\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\win10\\RiderProjects\\TomBankBackend\\Domain\\Domain.csproj"
             }
           }
         }
