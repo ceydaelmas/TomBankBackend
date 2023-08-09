@@ -3,6 +3,7 @@ using Domain.IRepositories;
 using Domain.Settings;
 using Infrastructure;
 using Infrastructure.Context;
+using Infrastructure.Middleware;
 using Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -39,6 +40,7 @@ if (app.Environment.IsDevelopment())
 app.UseCors();
 
 app.UseHttpsRedirection();
+app.UseMiddleware<LoggingMiddleware>();
 
 app.UseAuthorization();
 

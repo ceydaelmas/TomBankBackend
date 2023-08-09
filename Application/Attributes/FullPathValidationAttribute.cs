@@ -18,24 +18,21 @@ namespace Application.Attributes
                 return ValidationResult.Success;
             }
 
-            // fullPath geçerli bir dosya yolu olmalıdır
+           
             if (!IsRootedPath(fullPath))
             {
                 return new ValidationResult("fullPath must be a valid rooted path.");
             }
 
-            // fullPath içinde geçersiz karakterleri kontrol et
             if (ContainsInvalidCharacters(fullPath))
             {
                 return new ValidationResult("fullPath contains invalid characters.");
             }
 
-            // fullPath geçerli bir tam yol olmalıdır
             try
             {
                 string fullPathNormalized = Path.GetFullPath(fullPath);
 
-                // fullPath'de boşluk içerip içermediğini kontrol et
                 if (fullPathNormalized.Contains(" "))
                 {
                     return new ValidationResult("fullPath cannot contain spaces.");
@@ -49,20 +46,16 @@ namespace Application.Attributes
             return ValidationResult.Success;
         }
 
-        // Geçerli bir dosya yolu olup olmadığını kontrol eden metod
         private bool IsRootedPath(string path)
         {
-            // Başlangıçta ./ ile başlayanları geçerli kabul edelim
             if (path.StartsWith("./"))
             {
                 return true;
             }
 
-            // Diğer durumlar için Path.IsPathRooted metodu kullanılabilir
             return Path.IsPathRooted(path);
         }
 
-        // Geçersiz karakterleri kontrol eden metod
         private bool ContainsInvalidCharacters(string path)
         {
             return path.Contains("//") || !Regex.IsMatch(path, @"^[a-zA-Z0-9./\\:]+$");
