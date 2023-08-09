@@ -41,7 +41,7 @@ app.UseCors();
 
 app.UseHttpsRedirection();
 app.UseMiddleware<LoggingMiddleware>();
-
+app.UseMiddleware<ErrorHandlingMiddleware>();
 app.UseAuthorization();
 
 app.MapControllers();
