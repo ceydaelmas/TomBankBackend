@@ -8,9 +8,7 @@ namespace Application.ApiResponse
 {
     public class Response<T>
     {
-        public Response()
-        {
-        }
+    
         public Response(T data, bool succeeded, string message = null)
         {
             Succeeded = succeeded;

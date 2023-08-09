@@ -10,7 +10,7 @@ namespace Application.Attributes
     {
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
-            string fullPath = value as string;
+            var fullPath = value as string;
 
             // fullPath boş olabilir
             if (string.IsNullOrWhiteSpace(fullPath))
@@ -46,7 +46,7 @@ namespace Application.Attributes
             return ValidationResult.Success;
         }
 
-        private bool IsRootedPath(string path)
+        private static bool IsRootedPath(string path)
         {
             if (path.StartsWith("./"))
             {
