@@ -5,10 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Infrastructure.Context
+namespace Infrastructure.Context;
+
+public interface IMongoContext
 {
-    public interface IMongoContext
-    {
-        IMongoCollection<T> GetCollection<T>(String collectionName);
-    }
+    IMongoCollection<T> GetCollection<T>(String collectionName);
 }

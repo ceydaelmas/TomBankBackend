@@ -53,7 +53,7 @@ namespace Infrastructure.Repositories
 
         public async Task<List<Tab>> GetSelectableParentTabs(int id)
         {
-            var filter = Builders<Tab>.Filter.Where(t =>(t._id!= id) && (t.parentId!=id) && (t.IsDeleted!=true));
+            var filter = Builders<Tab>.Filter.Where(t =>t._id!= id && t.parentId!=id && t.IsDeleted!=true);
 
             var selectedTabs = await _collection.Find(filter).ToListAsync();
             return selectedTabs;
@@ -64,7 +64,7 @@ namespace Infrastructure.Repositories
         }
         public async Task<List<Tab>> GetByParentIdAsync(int parentId)
         {
-            var filter = Builders<Tab>.Filter.Where(t => (t.parentId==parentId) && (t.IsDeleted!=true));
+            var filter = Builders<Tab>.Filter.Where(t => t.parentId==parentId && t.IsDeleted!=true);
             var childTabs = await _collection.Find(filter).ToListAsync();
             return childTabs;
         }

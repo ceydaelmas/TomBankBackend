@@ -12,8 +12,7 @@ namespace Domain.IRepositories
         Task<Tab> GetByNameAsync(string name);
         Task<int> GetIdByNameAsync(string tabName);
         Task<bool> ExistsAsync(string tabName);
-        string GetNameById(int? id);
         Task<List<Tab>> GetSelectableParentTabs(int id);
-        Task<List<Tab>> GetByParentIdAsync(int id);
+        
     }
 }
