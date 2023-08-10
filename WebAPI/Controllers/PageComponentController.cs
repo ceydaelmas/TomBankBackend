@@ -3,10 +3,6 @@ using Application.Features.PageComponent.Commands.Delete;
 using Application.Features.PageComponent.Commands.Update;
 using Application.Features.PageComponent.Queries.Get;
 using Application.Features.PageComponent.Queries.Get.GetComponentsByPageName;
-using Application.Features.Property.Commands.Create;
-using Application.Features.Tab.Commands.Delete;
-using Application.Features.Tab.Commands.Update;
-using Application.Features.Tab.Queries;
 using Application.Model;
 using Microsoft.AspNetCore.Mvc;
 

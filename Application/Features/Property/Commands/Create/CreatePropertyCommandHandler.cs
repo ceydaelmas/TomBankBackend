@@ -1,14 +1,6 @@
 ﻿using Application.ApiResponse;
-using Application.Features.Tab.Commands.Create;
-using AutoMapper;
 using Domain.IRepositories;
 using MediatR;
-using Microsoft.Extensions.Caching.Memory;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Features.Property.Commands.Create
 {

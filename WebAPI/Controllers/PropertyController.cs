@@ -1,5 +1,4 @@
-﻿using Application.Features.Component.Commands.Create;
-using Application.Features.Property.Commands.Create;
+﻿using Application.Features.Property.Commands.Create;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers

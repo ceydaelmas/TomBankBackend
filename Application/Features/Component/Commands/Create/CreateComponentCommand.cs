@@ -1,8 +1,6 @@
 ﻿using Application.ApiResponse;
 using Application.Model;
 using MediatR;
-
-
 namespace Application.Features.Component.Commands.Create
 {
     public class CreateComponentCommand : IRequest<Response<string>>

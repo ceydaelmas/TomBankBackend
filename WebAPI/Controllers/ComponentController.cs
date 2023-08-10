@@ -1,7 +1,5 @@
 ﻿using Application.Features.Component.Commands.Create;
 using Application.Features.Component.Queries.Get;
-using Application.Features.Tab.Commands.Create;
-using Application.Features.Tab.Queries;
 using Application.Model;
 using Microsoft.AspNetCore.Mvc;
 

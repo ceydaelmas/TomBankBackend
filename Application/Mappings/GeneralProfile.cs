@@ -12,12 +12,6 @@ using Application.Features.Tab.Queries;
 using Application.Model;
 using AutoMapper;
 using Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Application.Mappings
 {
     //Bu sınıf, AutoMapper kütüphanesini kullanarak nesneler arasında dönüşüm (mapping) tanımlar.

@@ -1,17 +1,9 @@
 ﻿using Application.ApiResponse;
 using AutoMapper;
-using Domain.Entities;
 using Domain.IRepositories;
 using MediatR;
 using Microsoft.Extensions.Caching.Memory;
-using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics.Metrics;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Application.Features.Tab.Commands.Create
 {

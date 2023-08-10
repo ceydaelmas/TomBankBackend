@@ -1,14 +1,8 @@
 ﻿using Application.ApiResponse;
-using Application.Features.Component.Commands.Create;
-using Application.Model;
 using Domain.Entities;
 using Domain.IRepositories;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Application.Features.PageComponent.Commands.Create
 {

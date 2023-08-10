@@ -1,12 +1,8 @@
-﻿using Application.ApiResponse;
-using Application.Features.Tab.Commands.Create;
+﻿using Application.Features.Tab.Commands.Create;
 using Application.Features.Tab.Commands.Delete;
 using Application.Features.Tab.Commands.Update;
 using Application.Features.Tab.Queries;
 using Application.Model;
-using Domain.IRepositories;
-using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers

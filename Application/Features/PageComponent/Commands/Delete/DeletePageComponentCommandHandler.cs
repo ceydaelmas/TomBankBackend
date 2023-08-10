@@ -1,8 +1,6 @@
 ﻿using Application.ApiResponse;
 using Domain.IRepositories;
 using MediatR;
-
-
 namespace Application.Features.PageComponent.Commands.Delete
 {
     public class DeletePageComponentCommandHandler : IRequestHandler<DeletePageComponentCommand, Response<string>>
